@@ -1,8 +1,8 @@
 import AtomicLink from "../atoms/AtomicLink";
+import React from 'react';
 
-function Nav(props) {
-    const { menuItems } = this.props;
-
+function MoleculeNav(props) {
+    const menuItems = props.menuItems;
     return (
         <nav>
             <ul>
@@ -15,3 +15,5 @@ function Nav(props) {
         </nav>
     );
 }
+
+export default MoleculeNav;

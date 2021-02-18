@@ -1,5 +1,5 @@
 import AtomicImage from './atoms/AtomicImage';
-
+import React from 'react';
 function MoleculeCard(props) {
     return (
         <section class="gallerypage-card">
