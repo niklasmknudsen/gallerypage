@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// Imports components
+import PageGallery from './page/PageGallery';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+        <PageGallery />
   </React.StrictMode>,
   document.getElementById('root')
 );
