@@ -24,3 +24,4 @@ class PageGallery extends Component {
 }
 
 export default PageGallery;
+
