@@ -1,17 +1,17 @@
 import AtomicLink from "../atoms/AtomicLink";
 
-function Nav(props) {
-    const { menuItems } = this.props;
-
+function MoleculeNav(props) {
     return (
         <nav>
             <ul>
-                {menuItems.map((item => 
-                    <li>
-                        <AtomicLink href={item.href} style={item.style} text={item.text} />
+                {props.menuItems.map((item => 
+                    <li className={item.style}>
+                        <AtomicLink href={item.href} text={item.text} />
                     </li>
                 ))}
             </ul>
         </nav>
     );
 }
+
+export default MoleculeNav;

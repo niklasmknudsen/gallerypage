@@ -18,7 +18,6 @@ class PageGallery extends Component {
     }
 
     render() {
-        const { color, backgroundColor } = this.state;
         return <AtomicButton handleClick={this.handleClick.bind(this)} style={this.styledButton} text={this.state.text} />;
     }
 }

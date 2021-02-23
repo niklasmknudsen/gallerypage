@@ -1,26 +1,19 @@
-import AtomicLink from './atoms/AtomicLink';
+import React, { Component } from 'react';
+import MoleculeNav from '../molecules/MoleculeNav';
 
-class OrganismHeader extends React.Component {
+class OrganismHeader extends Component {
 
 	constructor(props) {
 		super(props);
-
 	}
 
 	render() {
-
 		return (
-			<header className={whatever}>
-				<AtomicLink text={this.probs.text} style={{}}  />
-
-
+			<header>
+				<MoleculeNav menuItems={this.props.items} />
 			</header>
 		)
-
 	}
-
-
-
-
-
 }
+
+export default OrganismHeader;
