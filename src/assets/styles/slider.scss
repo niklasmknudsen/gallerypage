@@ -112,7 +112,9 @@ sliderContainer {
     }
 
     .slideSubtitle::before {
-        content: "— ";
+        font-family: FontAwesome;
+        content: "\25AE";
+        position: absolute;
     }
 
     .slideDescription {

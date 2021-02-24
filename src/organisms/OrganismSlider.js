@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckSquare, faCoffee } from '@fortawesome/fontawesome-free-solid';
 //import Slide from '../molecules/MoleculeSlide';
 
 const slides = [ // this will only be here temporary 
@@ -147,13 +149,13 @@ function OrganismSlider(props) {
         <article id="organismSlider">
             <section className="sliderBody sliderContainer">
                 <div className="slides">
-                    <button onClick={() => dispatch({ type: "PREV" })}>‹</button>
+                    <button onClick={() => dispatch({ type: "PREV" })}><FontAwesomeIcon icon={faCoffee} /></button>
 
                     {[...slides, ...slides, ...slides].map((slide, i) => {
                         let offset = slides.length + (state.slideIndex - i);
                         return <Slide slide={slide} offset={offset} key={i} />;
                     })}
-                    <button onClick={() => dispatch({ type: "NEXT" })}>›</button>
+                    <button onClick={() => dispatch({ type: "NEXT" })}><FontAwesomeIcon icon={faCheckSquare} /></button>
                 </div>
             </section>
         </article>
