@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckSquare, faCoffee } from '@fortawesome/fontawesome-free-solid';
+import { faAngleRight, faAngleLeft } from '@fortawesome/fontawesome-free-solid';
 //import Slide from '../molecules/MoleculeSlide';
 
 const slides = [ // this will only be here temporary 
@@ -108,7 +108,7 @@ const slidesReducer = (state, event) => {
 function Slide({ slide, offset }) {
     const active = offset === 0 ? true : null;
     const ref = useTilt(active);
-
+    console.log("active: " + active);
     return (
         <div
             ref={ref}
@@ -145,17 +145,18 @@ function Slide({ slide, offset }) {
 
 function OrganismSlider(props) {
     const [state, dispatch] = React.useReducer(slidesReducer, initialState);
-    return (
+    return ( 
         <article id="organismSlider">
             <section className="sliderBody sliderContainer">
                 <div className="slides">
-                    <button onClick={() => dispatch({ type: "PREV" })}><FontAwesomeIcon icon={faCoffee} /></button>
+                    <button onClick={() => dispatch({ type: "PREV" })}><FontAwesomeIcon className="slidePrev" icon={faAngleRight} /></button>
 
                     {[...slides, ...slides, ...slides].map((slide, i) => {
                         let offset = slides.length + (state.slideIndex - i);
+                        console.log(offset);
                         return <Slide slide={slide} offset={offset} key={i} />;
                     })}
-                    <button onClick={() => dispatch({ type: "NEXT" })}><FontAwesomeIcon icon={faCheckSquare} /></button>
+                    <button onClick={() => dispatch({ type: "NEXT" })}><FontAwesomeIcon className="slideNext" icon={faAngleLeft} /></button>
                 </div>
             </section>
         </article>
