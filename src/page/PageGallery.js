@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AtomicButton from '../atoms/AtomicButton';
+import OrganismSlider from '../organisms/OrganismSlider';
 
 class PageGallery extends Component {
     
@@ -18,7 +19,9 @@ class PageGallery extends Component {
     }
 
     render() {
-        return <AtomicButton handleClick={this.handleClick.bind(this)} style={this.styledButton} text={this.state.text} />;
+        return (
+            <OrganismSlider></OrganismSlider>
+        );
     }
 }
 

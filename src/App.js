@@ -3,7 +3,8 @@ import { render } from "react-dom";
 import PageGallery from './page/PageGallery';
 import OrganismHeader from './organisms/OrganismHeader';
 import { Component } from "react";
-
+import './App.scss';
+import './assets/styles/slider.scss';
 
 class App extends Component {
 
