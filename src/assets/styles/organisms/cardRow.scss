@@ -1,0 +1,20 @@
+$grid-Columns: 3;
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat($grid-Columns, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 400px;
+    max-height: 400px;
+}
+
+.card-row {
+    position: relative;
+    grid-column: auto;
+    grid-row: 1;
+}
+
+.card-column {
+    grid-column: auto;
+    grid-row: auto;
+}

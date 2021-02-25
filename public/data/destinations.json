@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "src": "https://images.unsplash.com/photo-1581836499506-4a660b39478a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ",
+      "alt": "experience the French Alps",
+      "text": "Chamonix Franche",
+      "info": "The Champagne region is home to all of the world’s most famous Champagne brands including Taittinger, Ruinart, Moët & Chandon, and Veuve Clicquot, and lies a short drive from Paris. This private tour lets you create your own personalized itinerary, visiting the Champagne houses of your choice, enjoying guided Champagne tastings (own expense), or stopping for lunch at a local bistro."
+    },
+    {
+      "src": "/images/portugese.jpg",
+      "alt": "Portugal experience can be many things",
+      "text": "Welcome to portugal",
+      "info": "Medieval castles, cobblestone villages, captivating cities and golden beaches: the Portugal experience can be many things. History, great food and idyllic scenery are just the beginning…"
+    },
+    {
+      "src": "/images/995.jpg",
+      "alt": "Vietnam",
+      "text": "Travel to Vietnam offers a wealth of experiences",
+      "info": "Travel to Vietnam offers a wealth of experiences. Exotic and colorful markets, stunning natural resources, lush rice terraces, historic temples and palaces as well as beautiful beaches make it easy to combine nature, culture and beach life in one magnificent holiday to Vietnam. Our package trips to Vietnam include flights, transportation, hotels and a number of excursions. It gives you more time to experience, and you do not have to bother with all the practicalities. Of course, there is also plenty of time to explore Vietnam on your own."
+    }
+  ]
+}

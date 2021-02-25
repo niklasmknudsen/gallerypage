@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AtomicButton from '../atoms/AtomicButton';
 import OrganismSlider from '../organisms/OrganismSlider';
+import OrganismCardRow from '../organisms/OrganismCardRow';
 
 class PageGallery extends Component {
     
@@ -20,7 +21,10 @@ class PageGallery extends Component {
 
     render() {
         return (
-            <OrganismSlider></OrganismSlider>
+            <section className="pageGallery">
+                <OrganismSlider></OrganismSlider>
+                <OrganismCardRow></OrganismCardRow>
+            </section>
         );
     }
 }
