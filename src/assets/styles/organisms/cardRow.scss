@@ -1,0 +1,28 @@
+$grid-Columns: 3;
+
+.card-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(1, 1fr);
+    height: 400px;
+    max-height: 400px;
+    position: relative;
+}
+
+.card-row {
+    grid-column: auto;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat($grid-Columns, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 5px;
+    max-height: inherit;
+    height: inherit;
+}
+
+.card-column {
+    margin: 0 auto;
+    grid-column: auto;
+    grid-row: auto;
+}

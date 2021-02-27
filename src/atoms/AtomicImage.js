@@ -1,5 +1,7 @@
-function AtomicImage() {
-    return <img src={this.props.src} alt={this.props.alt} style={this.props.style} />;
+import React from 'react';
+
+function AtomicImage(props) {
+    return <img src={props.src} alt={props.alt} style={props.style} />;
 }
 
 export default AtomicImage;

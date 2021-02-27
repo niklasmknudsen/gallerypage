@@ -168,3 +168,9 @@ sliderContainer {
         }
     }
 }
+
+@media screen and (min-width: 992px) {
+    .slideContent {
+        left: calc(60% - 400px);
+    }
+}
