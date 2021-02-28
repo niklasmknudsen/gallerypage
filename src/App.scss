@@ -1,6 +1,11 @@
 /**
-    Imports
+    Color schemes:
 */
+$dark: #182628;
+$light: #F2F2F2;
+$green: #3B945E;
+$lightgreen: #57BA98;
+$blue: #65CCB8;
 
 html,
 body {
@@ -8,6 +13,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background: $light;
 }
 
 .App {
@@ -17,6 +23,10 @@ body {
 main {
     width: 100%;
     height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $blue;
 }
 
 .App-logo {

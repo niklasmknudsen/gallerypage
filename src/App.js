@@ -18,9 +18,24 @@ class App extends Component {
 					text: 'Home'
 				},
 				{
-					href: '/create',
+					href: '/activities',
 					style: "menu-item",
-					text: 'Create gallery post'
+					text: 'Activities'
+				},
+				{
+					href: '/destinations',
+					style: "menu-item",
+					text: 'Destinations'
+				},
+				{
+					href: '/contact',
+					style: "menu-item",
+					text: 'Contact'
+				},
+				{
+					href: '/about',
+					style: "menu-item",
+					text: 'About'
 				}
 			]
         }
