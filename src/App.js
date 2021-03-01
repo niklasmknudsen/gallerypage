@@ -5,6 +5,7 @@ import PageGallery from './page/PageGallery';
 import OrganismHeader from './organisms/OrganismHeader';
 import './App.scss';
 import './assets/styles/organisms/slider.scss';
+import OrganismFooter from "./organisms/OrganismFooter";
 
 class App extends Component {
 
@@ -46,6 +47,7 @@ class App extends Component {
 			<main>
 				<OrganismHeader items={this.state.menuItems} ></OrganismHeader>
 				<PageGallery></PageGallery>
+				<OrganismFooter />
 			</main>
 		);
     }
