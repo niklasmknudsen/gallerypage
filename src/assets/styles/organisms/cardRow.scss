@@ -1,6 +1,6 @@
 $grid-Columns: 3;
 
-.card-grid {
+#card-grid {
     width: 100%;
     display: grid;
     grid-template-columns: auto;
@@ -14,7 +14,7 @@ $grid-Columns: 3;
     grid-column: auto;
     grid-row: 1;
     display: grid;
-    grid-template-columns: repeat($grid-Columns, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 5px;
     max-height: inherit;
