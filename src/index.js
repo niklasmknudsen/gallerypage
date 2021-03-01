@@ -5,10 +5,17 @@ import App from './App';
 
 // CSS imports
 import './index.css';
-
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+import PageHome from './page/PageHome';
+import PageContact from './page/PageContact';
 
 ReactDOM.render(
-    <React.StrictMode>
+  <React.StrictMode>
         <App />
   </React.StrictMode>,
   document.getElementById('root')

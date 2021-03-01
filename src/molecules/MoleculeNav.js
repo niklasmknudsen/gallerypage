@@ -2,22 +2,31 @@ import AtomicLink from "../atoms/AtomicLink";
 import AtomicLogo from "../atoms/AtomicLogo";
 import '../assets/styles/molecules/nav.scss';
 import React from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+
+// importing components
+
+import PageHome from '../page/PageHome';
+import PageContact from '../page/PageContact';
 
 function MoleculeNav(props) {
     return (
-        <div>
-            <nav>
-                <AtomicLogo />
-                <ul className="nav-links">
-                    {props.menuItems.map((item => 
+        <nav>
+            <AtomicLogo />
+            <ul className="nav-links">
+                    {props.menuItems.map((item =>
                         <li className={item.style}>
-                            <AtomicLink href={item.href} text={item.text} />
+                            <Link to={item.href}>{item.text}</Link>
                         </li>
                     ))}
-                </ul>
-                <BurgerMenu />
-            </nav> 
-        </div>
+            </ul>
+            <BurgerMenu />
+        </nav>
     );
 }
 
@@ -50,9 +59,9 @@ function BurgerMenu(props) {
 
     return (
         <div className="burger">
-            <div class="lineOne"></div>
-            <div class="lineTwo"></div>
-            <div class="lineThree"></div>
+            <div className="lineOne"></div>
+            <div className="lineTwo"></div>
+            <div className="lineThree"></div>
         </div>
     );
 }

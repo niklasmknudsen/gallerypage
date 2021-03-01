@@ -52,7 +52,7 @@ class OrganismCardRow extends Component {
 			return <div>Loading...</div>;
 		} else {
 			return (
-				<article className="card-grid">
+				<section id="card-grid">
 					<section className="card-row">
 						{destinations.map((item, index) => (
 							<div className="card-column">
@@ -60,7 +60,7 @@ class OrganismCardRow extends Component {
 							</div>
 						))}
 					</section>
-				</article>
+				</section>
 			);
 		}
 	}
