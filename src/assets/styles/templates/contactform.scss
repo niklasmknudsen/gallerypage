@@ -1,0 +1,64 @@
+/**
+    Color schemes:
+*/
+$dark: #182628;
+$light: #F2F2F2;
+$green: #3B945E;
+$lightgreen: #57BA98;
+$blue: #65CCB8;
+
+
+.contact-form {
+    margin: 1em;
+    background-color: ghostwhite;
+    display: grid;
+    grid-template-columns: 100%;
+ 
+
+    .form-group {
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+        grid-row: auto;
+        grid-column: auto;
+        background-color: ghostwhite;
+
+
+        label {
+            margin-left: 1em;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type=text] {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            min-width: 350px;
+            min-height: 30px;
+        }
+
+        textarea {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            min-width: 350px;
+            min-height: 150px;
+        }
+
+        input[type=submit] {
+            width: 120px;
+            margin-left: 10px;
+            height: 40px;
+            border: none;
+            color: white;
+            background: $lightgreen;
+        }
+
+        input[type=submit]:hover {
+            background: $green;
+        }
+    }
+}
