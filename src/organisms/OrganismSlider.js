@@ -142,7 +142,7 @@ function Slide({ slide, offset }) {
 function OrganismSlider(props) {
     const [state, dispatch] = React.useReducer(slidesReducer, initialState);
     return ( 
-        <article id="organismSlider">
+        <section id="organismSlider">
             <section className="sliderBody sliderContainer">
                 <div className="slides">
                     <button onClick={() => dispatch({ type: "PREV" })}><FontAwesomeIcon className="slidePrev" icon={faAngleRight} /></button>
@@ -155,7 +155,7 @@ function OrganismSlider(props) {
                     <button onClick={() => dispatch({ type: "NEXT" })}><FontAwesomeIcon className="slideNext" icon={faAngleLeft} /></button>
                 </div>
             </section>
-        </article>
+        </section>
     );
 }
 
