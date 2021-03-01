@@ -1,0 +1,45 @@
+/**
+    Color schemes:
+*/
+$dark: #262120;
+$light: #F2F2F2;
+$green: #3B945E;
+$lightgreen: #57BA98;
+$blue: #65CCB8;
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    min-height: 100px;
+    background: $dark;
+    clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+footer h3 {
+    color: $lightgreen;
+}
+
+footer li {
+    background-color: deeppink;
+}
+
+footer a {
+
+}
+
+footer a:hover {
+
+}
+
+/* Mobile screens */
+@media screen and (max-width: 640px) {
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+}
