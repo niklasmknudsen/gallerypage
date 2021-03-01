@@ -20,13 +20,15 @@
 
 ### Desktop
 
--*Columns:* 12 
+-*Columns: * 12 
 
--*Rows:* auto
+-*Rows: * auto
 
 ### Mobile
 
 -*Columns:* 4 
 
--*Rows:* auto
+-*Rows: * auto
+
+## Responsive Sizes
 
