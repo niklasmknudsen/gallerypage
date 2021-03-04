@@ -5,7 +5,7 @@ import '../assets/styles/pages/pageactivities.scss';
 
 /* component imports */
 import Testimonial from '../molecules/MoleculeTestimonial';
-
+import OrganismHeader from '../organisms/OrganismHeader';
 
 class PageActivities extends Component {
 
@@ -22,9 +22,31 @@ class PageActivities extends Component {
         };
     }
 
+
+    componentDidMount() {
+        fetch("")
+            .then(res => res.json())
+            .then((result) => {
+                this.setState({
+                    isLoaded: true,
+                    images: result.data
+                });
+            },
+                (error) => {
+                    this.setState({
+                        isLoaded: true,
+                        error
+                    }
+                    )
+                }
+            )
+    }
+
+
     render() {
         return (
             <article id="page-activities">
+                <OrganismHeader />
                 <div className="content-grid">
                     <div className="content-grid__column">
 
