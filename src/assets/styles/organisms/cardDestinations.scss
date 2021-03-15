@@ -1,0 +1,55 @@
+/**
+    Color schemes:
+*/
+$dark: #262120;
+$light: #F2F2F2;
+$green: #3B945E;
+$lightgreen: #57BA98;
+$blue: #65CCB8;
+
+
+.pageAllDestinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 75px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+.dest-card {
+    background-color: $lightgreen;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 2px #555555;
+    min-width: 200px;
+    min-height: 300px;
+    border: 1px solid rgba(0,0,0,0.5);
+
+    img {
+        width: 100%;
+    }
+}
+
+.dest-card h2 {
+    margin: 20px;
+    color: yellow;
+    text-shadow: 0px 0px 1px #000000;
+    color: #ffffff;
+    text-align:center;
+}
+.dest-card p {
+    margin: 0 20px 20px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 640px) {
+
+    .pageAllDestinations {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+    }
+
+
+}
