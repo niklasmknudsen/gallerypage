@@ -6,6 +6,7 @@ import OrganismHeader from './organisms/OrganismHeader';
 import './App.scss';
 import './assets/styles/organisms/slider.scss';
 import OrganismFooter from "./organisms/OrganismFooter";
+import PageAllDestinations from "./page/PageAllDestinations";
 
 class App extends Component {
 
@@ -24,7 +25,7 @@ class App extends Component {
 					text: 'Activities'
 				},
 				{
-					href: '/destinations',
+					href: '/allDestinations',
 					style: "menu-item",
 					text: 'Destinations'
 				},
@@ -47,6 +48,7 @@ class App extends Component {
 			<main>
 				<OrganismHeader items={this.state.menuItems} ></OrganismHeader>
 				<PageGallery></PageGallery>
+				<PageAllDestinations></PageAllDestinations>
 				<OrganismFooter />
 			</main>
 		);
