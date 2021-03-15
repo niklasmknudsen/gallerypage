@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MoleculeFooterCustomerService from '../molecules/MoleculeFooterCustomerService.js';
+import '../assets/styles/organisms/footer.scss';
 
 class OrganismFooter extends Component {
 
@@ -33,7 +34,7 @@ class OrganismFooter extends Component {
 
 	render() {
 		return (
-			<footer>
+			<footer className="footer">
 				<MoleculeFooterCustomerService footerServiceLinks={this.state.footerServiceLinks} />
 			</footer>
 		)

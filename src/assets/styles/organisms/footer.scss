@@ -8,37 +8,51 @@ $lightgreen: #57BA98;
 $blue: #65CCB8;
 
 
-footer {
+.footer {
     position: fixed;
     bottom: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    min-height: 100px;
+    height: 250px;
     background: $dark;
-    clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
-}
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
 
-footer h3 {
-    color: $lightgreen;
-}
 
-footer li {
-    background-color: deeppink;
-}
+    h3 {
+        color: $green;
+        font-size: 25px;
+        text-align: center;
+        text-shadow: 1px 2px 1px #000000;
+    }
 
-footer a {
+    ul {
+        list-style-type: none;
+        width: 50%;
+        margin: 0 auto;
+        padding: 10px;
+        /*background-color: deeppink;*/
+    }
 
-}
+    li {
+        text-align: center;
+    }
 
-footer a:hover {
+    a {
+        color: $lightgreen;
+        text-decoration: none;
+        font-size: 20px;
+        text-shadow: 1px 2px 1px #000000;
+    }
 
+    a:hover {
+    }
 }
 
 /* Mobile screens */
 @media screen and (max-width: 640px) {
 
-    footer {
+    .footer {
         grid-template-columns: 1fr;
     }
 
