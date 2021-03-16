@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import '.././App.scss';
+import '.././assets/styles/organisms/slider.scss';
+import OrganismHeader from '../organisms/OrganismHeader';
 import AtomicButton from '../atoms/AtomicButton';
 import OrganismSlider from '../organisms/OrganismSlider';
 import OrganismCardRow from '../organisms/OrganismCardRow';
 
-class PageGallery extends Component {
+class PageHome extends Component {
     
     constructor(props) {
         super(props);
@@ -21,13 +24,14 @@ class PageGallery extends Component {
 
     render() {
         return (
-            <section className="pageGallery">
+            <article id="page-home">
+                <OrganismHeader />
                 <OrganismSlider></OrganismSlider>
                 <OrganismCardRow></OrganismCardRow>
-            </section>
+            </article>
         );
     }
 }
 
-export default PageGallery;
+export default PageHome;
 
