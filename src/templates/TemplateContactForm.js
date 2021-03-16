@@ -9,7 +9,7 @@ class TemplateContactForm extends React.Component {
         this.state = {
             name: null,
             email: null,
-            besked: null
+            message: null
         }
     }
 
@@ -30,8 +30,8 @@ class TemplateContactForm extends React.Component {
                     <input type="text" className="form-control" value={this.state.email} name="email" />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="besked">Besked</label><br />
-                    <textarea aria-multiline className="form-control"  value={this.state.besked} name="besked"></textarea>
+                    <label htmlFor="besked">Message</label><br />
+                    <textarea aria-multiline className="form-control"  value={this.state.message} name="message"></textarea>
                 </div>
                 <div className="form-group">
                     <input type="submit" value="Send" />
