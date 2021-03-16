@@ -8,6 +8,10 @@ import {
 } from "react-router-dom";
 // Imports components
 import OrganismHeader from './organisms/OrganismHeader';
+import './App.scss';
+import './assets/styles/organisms/slider.scss';
+import OrganismFooter from "./organisms/OrganismFooter";
+import PageAllDestinations from "./page/PageAllDestinations";
 import PageHome from './page/PageHome';
 import PageContact from './page/PageContact';
 import PageDestination from './page/PageDestination';
@@ -19,7 +23,33 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+			menuItems: [
+				{
+					href: '/home',
+					style: "menu-item",
+					text: 'Home'
+				},
+				{
+					href: '/activities',
+					style: "menu-item",
+					text: 'Activities'
+				},
+				{
+					href: '/allDestinations',
+					style: "menu-item",
+					text: 'Destinations'
+				},
+				{
+					href: '/contact',
+					style: "menu-item",
+					text: 'Contact'
+				},
+				{
+					href: '/about',
+					style: "menu-item",
+					text: 'About'
+				}
+			]
         }
 	}
 
@@ -35,7 +65,7 @@ class App extends Component {
                 </Switch>
             </Router>
 		);
-    }
+  }
 }
 
 export default App;
