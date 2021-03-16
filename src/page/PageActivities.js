@@ -6,6 +6,7 @@ import '../assets/styles/pages/pageactivities.scss';
 /* component imports */
 import Testimonial from '../molecules/MoleculeTestimonial';
 import OrganismHeader from '../organisms/OrganismHeader';
+import OrganismGallery from '../organisms/OrganismGallery';
 
 class PageActivities extends Component {
 
@@ -49,11 +50,11 @@ class PageActivities extends Component {
                 <OrganismHeader />
                 <div className="content-grid">
                     <div className="content-grid__column">
-
+                        <OrganismGallery></OrganismGallery>
                     </div>
                     <div className="content-grid__column">
-                        <Testimonial header={this.state.headerline} text={this.state.description1}></Testimonial>
-                        <Testimonial text={this.state.description2}></Testimonial>
+                        <Testimonial className="text-header" header={this.state.headerline} text={this.state.description1}></Testimonial>
+                        <Testimonial className="text-description" text={this.state.description2}></Testimonial>
                     </div>
                 </div>
             </article>
