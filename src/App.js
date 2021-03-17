@@ -35,7 +35,7 @@ class App extends Component {
 					text: 'Activities'
 				},
 				{
-					href: '/allDestinations',
+					href: '/destinations',
 					style: "menu-item",
 					text: 'Destinations'
 				},
@@ -59,7 +59,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/" component={PageHome} />
                     <Route exact path="/activities" component={PageActivities} />
-                    <Route exact path="/destinations" component={PageDestination} />
+					<Route exact path="/destinations" component={PageAllDestinations} />
                     <Route exact path="/about" component={PageAbout} />
                     <Route exact path="/contact" component={PageContact} />
                 </Switch>

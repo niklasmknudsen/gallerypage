@@ -17,6 +17,9 @@ body {
     padding: 0px;
     background: $light;
 }
+body {
+    min-height: 100%;
+}
 
 .App {
     text-align: center;

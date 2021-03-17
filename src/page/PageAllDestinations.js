@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import OrganismDestinations from '../organisms/OrganismDestinations';
 import '../assets/styles/organisms/cardDestinations.scss';
+import OrganismHeader from '../organisms/OrganismHeader';
+import OrganismFooter from '../organisms/OrganismFooter';
+
 
 class PageAllDestinations extends Component {
 
@@ -10,10 +13,11 @@ class PageAllDestinations extends Component {
 
     render() {
         return (
-            <section>
-                <h1>All Destinaltions</h1>
+            <article id="page-destinations">
+                <OrganismHeader />
                 <OrganismDestinations />
-            </section>
+                <OrganismFooter />
+            </article>
         );
     }
 }
