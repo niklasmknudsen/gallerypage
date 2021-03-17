@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import OrganismDestinations from '../organisms/OrganismDestinations';
-import '../assets/styles/organisms/cardDestinations.scss';
+import '../assets/styles/organisms/destinations.scss';
+import '../assets/styles/pages/pagedestinations.scss';
 import OrganismHeader from '../organisms/OrganismHeader';
 import OrganismFooter from '../organisms/OrganismFooter';
 
 
-class PageAllDestinations extends Component {
+class PageDestinations extends Component {
 
     constructor(props) {
         super(props);
@@ -22,4 +23,4 @@ class PageAllDestinations extends Component {
     }
 }
 
-export default PageAllDestinations;
+export default PageDestinations;

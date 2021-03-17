@@ -37,7 +37,7 @@ class OrganismFooter extends Component {
 			<footer id="footer">
 				<MoleculeFooterCustomerService footerServiceLinks={this.state.footerServiceLinks} />
 			</footer>
-		)
+		);
 	}
 }
 

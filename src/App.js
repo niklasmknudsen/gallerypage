@@ -1,4 +1,3 @@
-import { render } from "react-dom";
 import { Component } from "react";
 import {
 	BrowserRouter as Router,
@@ -7,14 +6,11 @@ import {
 	Link
 } from "react-router-dom";
 // Imports components
-import OrganismHeader from './organisms/OrganismHeader';
 import './App.scss';
 import './assets/styles/organisms/slider.scss';
-import OrganismFooter from "./organisms/OrganismFooter";
-import PageAllDestinations from "./page/PageAllDestinations";
+import PageDestinations from "./page/PageDestinations";
 import PageHome from './page/PageHome';
 import PageContact from './page/PageContact';
-import PageDestination from './page/PageDestination';
 import PageAbout from './page/PageAbout';
 import PageActivities from './page/PageActivities';
 
@@ -59,7 +55,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/" component={PageHome} />
                     <Route exact path="/activities" component={PageActivities} />
-					<Route exact path="/destinations" component={PageAllDestinations} />
+					<Route exact path="/destinations" component={PageDestinations} />
                     <Route exact path="/about" component={PageAbout} />
                     <Route exact path="/contact" component={PageContact} />
                 </Switch>

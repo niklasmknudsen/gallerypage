@@ -2,9 +2,8 @@ import AtomicLink from "../atoms/AtomicLink";
 import React from 'react';
 
 function MoleculeFooterCustomerService(props) {
-    return (
-        <div>
-            <h3>Customer Service</h3>
+    return (<section>
+        <h3>Customer Service</h3>
             <ul>
                 {props.footerServiceLinks.map((item =>
                     <li>
@@ -12,7 +11,7 @@ function MoleculeFooterCustomerService(props) {
                     </li>
                 ))}
             </ul>  
-        </div>
+        </section>
     );
 }
 

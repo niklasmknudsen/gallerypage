@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../molecules/MoleculeCardDestinations';
+
 /*import '../assets/styles/organisms/cardDestinations.scss';*/
 /*import '../assets/styles/organisms/cardDestinations.scss';*/
 
@@ -43,11 +44,11 @@ class OrganismDestinations extends Component {
 			return <div>Loading...</div>;
 		} else {
 			return (
-				<article className="pageAllDestinations">
+				<section className="all-destinations">
 					{destinations.map((item, index) => (
 						<Card key={index} src={item.src} alt={item.alt} text={item.text} info={item.info} />
 					))}
-				</article>
+				</section>
 			);
 		}
 	}
